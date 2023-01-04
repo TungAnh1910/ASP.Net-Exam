@@ -1,0 +1,7 @@
+﻿@model IEnumerable<ExTest01.Models.Category>
+    @foreach(var item in Model)
+    {
+        var url = "/prod/prodbycart/" + item.MaDM;
+        <a href="@url">@item.TenDM</a>
+        <label>&nbsp;|&nbsp;</label>
+    }
